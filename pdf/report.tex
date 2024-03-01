@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\title{ 
+{\Huge{ Assign  2
+\\
+HADL}} 
+}
+\date{}
+\begin{document}
+
+
+
+\author{
+Deepshikha  CS21BTECH11016
+}
+\maketitle
+
+
+\section{TODO}
+Why 1st layer less than 100?
+
+\section{Summary of SCALE-SIM}
+
+\subsection{What it does}
+\subsection{How it does}
+
+\begin{itemize}
+    \item It is a cycle-accurate simulator for DNN accelerators.
+    \item It takes in the CNN architecture and the accelerator configuration as input and gives the performance metrics as output.
+    \item It computes performance, on-chip and off-chip memory accesss, and interface bandwidth.
+    \item It can implement both scale-up and scale-out instances.
+    \item 
+\end{itemize}
+
+
+\section{Configs}
+
+
+\subsection{Eyeriss}
+Array size : 12 x 14
+\subsection{Google}
+Array size : 256 x 256
+\subsection{Scale}
+Array size : 32 x 32
+
+% \begin{center}
+%     \begin{tabular}{ |c|c |c| c | } 
+%     \hline
+%   & Eyeriss & Google & Scale \\
+%     \hline
+
+%     \end{tabular}
+% \end{center}
+
+\section{CNN architecture}
+
+\subsection{MobileNet}
+
+
+\section{Running CNN architecture on SCALE-SIM}
+
+\subsection{Varying the configs}
+
+\begin{enumerate}
+    \item MobileNet
+    \begin{enumerate}
+        \item First layer : 
+        \begin{enumerate}
+            \item The first conv layer has 224 x 224 x 3 size IFMAP.
+            \item Scale config has 32 x 32 array size , so all of it is utilsed  as 224/32 = 7.
+            \item Google config has 256 x 256 array size , it accomodates 224 x 224 x 3 IFMAP , but the rest of the array is wasted and so 
+            \item Eyeriss config has 12 x 14 array size , ao it cannot accomodate the entire IFMAP, so 224/12 = 18.66 and 224/14 = 16 , as 224 is not divisible by 12 , so rest of the array is wasted.
+        \end{enumerate}
+
+        \item Second Layer : 
+        \begin{enumerate}
+            \item This is a pooling layer
+            \item Pooling invloves accessing data in a non-regular pattern, which may not fully exploit the regular data access patterns.
+        \end{enumerate}
+    \end{enumerate}
+
+    
+\end{enumerate}
+
+
+
+\end{document}
