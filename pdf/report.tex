@@ -115,9 +115,23 @@ Array size : 32 x 32
         \end{itemize}
     \end{enumerate}
 
+    \item Resnet18
+        \begin{itemize}
+            \item We see it has no pooling layers, so the mapping efficiency always good.
+        \end{itemize}
+
     \item 
 
 \end{enumerate}
+
+\subsection*{Varying the architecture}
+
+\begin{itemize}
+    \item Eyeriss
+     \begin{itemize}
+        \item  We see that it gives beter efficiency for resnet18 than mobilenet. The difference is of filters.resnet18 in first layer has 7 x 7 filters while mobilenet has 3 x 3 filters , stride being same for both (2). Since more filter size means more data reuse/parallelism, resnet18 has better efficiency.
+    \end{itemize}
+\end{itemize}
 
 
 

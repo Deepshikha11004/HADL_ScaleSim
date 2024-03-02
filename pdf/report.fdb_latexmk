@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709239090.50576 "/home/deepshikha/Documents/SEM_6/KediaDL/Assign2/pdf/report.tex" "report.pdf" "report" 1709239090.99178 0
-  "/home/deepshikha/Documents/SEM_6/KediaDL/Assign2/pdf/report.tex" 1709239090.2841 2534 b53214ddc43107829b0d21d29b627e80 ""
+["pdflatex"] 1709375442.64311 "/home/deepshikha/Documents/SEM_6/KediaDL/Assign2/pdf/report.tex" "report.pdf" "report" 1709375443.09193 0
+  "/home/deepshikha/Documents/SEM_6/KediaDL/Assign2/pdf/report.tex" 1709375442.42856 4110 e37fb57ec62def77101efa407f181c8e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -76,9 +76,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1705569401.46208 4602615 ac1019cb4c4ba39710c2cf7f752b378d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706365272 7871979 d7a80282fe35c1718e3a6a69a217da70 ""
-  "report.aux" 1709239090.93409 2021 4fbe4fe4b7616706976e64db41b3ae0d "pdflatex"
-  "report.out" 1709239090.93509 1421 21351b1eb3862ab7c4f4dc6db59f6251 "pdflatex"
-  "report.tex" 1709239090.2841 2534 b53214ddc43107829b0d21d29b627e80 ""
+  "report.aux" 1709375443.04089 1792 3b7646a49b522d01f9a6bf9d1b69ab0d "pdflatex"
+  "report.out" 1709375443.04089 1191 4c6c482df9cef04f9573babf9f75701c "pdflatex"
+  "report.tex" 1709375442.42856 4110 e37fb57ec62def77101efa407f181c8e ""
   (generated)
   "report.aux"
   "report.log"
