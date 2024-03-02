@@ -118,9 +118,18 @@ Array size : 32 x 32
     \item Resnet18
         \begin{itemize}
             \item We see it has no pooling layers, so the mapping efficiency always good.
+            \item In google config 
+                \begin{itemize}
+                    \item in conv layer 3{\textunderscore}s , filter size decreases to 1 x 1, here we see efficiency reduces.
+                    \item as number of filters increase as we saw in `mobilenet' (>=265 ), mapping efficiency increases to 100 percent.
+                \end{itemize}
+            \item 
         \end{itemize}
 
-    \item 
+
+    \item GoogleNet
+    \begin{itemize}
+        
 
 \end{enumerate}
 
@@ -128,9 +137,9 @@ Array size : 32 x 32
 
 \begin{itemize}
     \item Eyeriss
-     \begin{itemize}
-        \item  We see that it gives beter efficiency for resnet18 than mobilenet. The difference is of filters.resnet18 in first layer has 7 x 7 filters while mobilenet has 3 x 3 filters , stride being same for both (2). Since more filter size means more data reuse/parallelism, resnet18 has better efficiency.
-    \end{itemize}
+        \begin{itemize}
+            \item  We see that it gives beter efficiency for resnet18 than mobilenet. The difference is of filters.resnet18 in first layer has 7 x 7 filters while mobilenet has 3 x 3 filters , stride being same for both (2). Since more filter size means more data reuse/parallelism, resnet18 has better efficiency.
+        \end{itemize}
 \end{itemize}
 
 
